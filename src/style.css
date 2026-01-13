@@ -1,0 +1,426 @@
+/* Body spacing for fixed bars */
+body {
+  padding-top: 115px; /* top bar + navbar */
+}
+
+/* TOP BAR */
+.top-bar {
+  background-color: #9750b8;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  padding: 10px 0;
+  z-index: 1051;
+}
+
+.top-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.top-bar i {
+  color: #ffffff;
+  margin-right: 4px;
+}
+
+.top-bar a:hover {
+  color: #9750b8;
+}
+
+/* Navbar below top bar */
+.main-navbar {
+  top: 32px; /* height of top bar */
+  background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+  color: #fff !important;
+}
+
+.navbar-brand img {
+  height: 45px;
+}
+
+.nav-link {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff !important;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: #9750b8 !important;
+}
+
+/* CTA */
+.cta-btn {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  background-color: #9750b8;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile stacking */
+@media (max-width: 576px) {
+  .top-bar .container {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  body {
+    padding-top: 140px;
+  }
+}
+
+
+/* Slider height */
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* Caption styling */
+.carousel-caption {
+  bottom: 30%;
+  text-align: left;
+}
+
+.carousel-caption h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 52px;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: #eee;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* CTA Button inside slider */
+.slider-cta {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  background-color: #9750b8;
+  color: #000;
+  padding: 10px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.slider-cta:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Dark overlay */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+/* ===== Ken Burns Effect ===== */
+.kenburns img {
+  animation: kenburnsZoom 8s ease-in-out infinite;
+}
+
+@keyframes kenburnsZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 65vh;
+  }
+
+  .carousel-caption {
+    bottom: 20%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* WHY ADOPT SECTION */
+.why-adopt {
+  padding: 80px 0;
+  background-color: #faf8f5;
+}
+
+.why-adopt h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.why-adopt p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+/* Button */
+.why-btn {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  background-color: #9750b8;
+  color: #fff9f9;
+  padding: 10px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.why-btn:hover {
+  background-color: #111;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Image styling */
+.why-img {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-adopt {
+    padding: 60px 0;
+  }
+
+  .why-adopt h2 {
+    font-size: 32px;
+  }
+}
+/* WHY ADOPT A RAGDOLL */
+.why-ragdoll {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+.why-ragdoll h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 44px;
+  color: #111;
+}
+
+.why-ragdoll .subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+/* Cards */
+.ragdoll-card {
+  height: 100%;
+  background: #faf8f5;
+  padding: 28px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.ragdoll-card h5 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.ragdoll-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+/* Hover */
+.ragdoll-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Highlight last card */
+.ragdoll-card.highlight {
+  background: linear-gradient(135deg, #9750b8, #f2c27d);
+  color: #000;
+}
+
+.ragdoll-card.highlight h5,
+.ragdoll-card.highlight p {
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-ragdoll {
+    padding: 70px 0;
+  }
+
+  .why-ragdoll h2 {
+    font-size: 32px;
+  }
+}
+
+/* Icon wrapper */
+.icon-wrap {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(209, 139, 71, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: all 0.35s ease;
+}
+
+.icon-wrap i {
+  font-size: 22px;
+  color: #9750b8;
+  transition: all 0.35s ease;
+}
+
+/* Icon animation on card hover */
+.ragdoll-card:hover .icon-wrap {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 12px 24px rgba(209, 139, 71, 0.4);
+}
+
+.ragdoll-card:hover .icon-wrap i {
+  transform: rotate(-6deg);
+}
+
+/* Highlight card icon */
+.ragdoll-card.highlight .icon-wrap {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.ragdoll-card.highlight .icon-wrap i {
+  color: #000;
+}
+
+/* RAGDOLL OVERVIEW */
+.ragdoll-overview {
+  padding: 90px 0;
+  background-color: #faf8f5;
+}
+
+.ragdoll-overview h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 44px;
+  color: #111;
+}
+
+.ragdoll-overview .subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 650px;
+  margin: 10px auto 0;
+}
+
+/* Cards */
+.overview-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.overview-card h5 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.overview-card p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+}
+
+/* Hover */
+.overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ragdoll-overview {
+    padding: 70px 0;
+  }
+
+  .ragdoll-overview h2 {
+    font-size: 32px;
+  }
+}
