@@ -1,38 +1,76 @@
-/* Body spacing for fixed bars */
 body {
-  padding-top: 115px; /* top bar + navbar */
+  margin: 0;
+  padding-top: 110px; /* 40px top-bar + ~70px navbar */
 }
+
 
 /* TOP BAR */
 .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
   background-color: #9750b8;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  z-index: 1050;
+}
+
+/* LEFT INFO */
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px;
+}
+
+/* ICON + TEXT PAIR */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
+}
+
+.top-left i {
   font-size: 14px;
-  padding: 10px 0;
-  z-index: 1051;
+  line-height: 1;
 }
 
-.top-bar a {
-  color: #ffffff;
+.top-left a {
+  color: #fff;
   text-decoration: none;
-  margin-left: 6px;
+  font-size: 14px;
+  line-height: 1;
 }
 
-.top-bar i {
-  color: #ffffff;
-  margin-right: 4px;
+/* RIGHT SOCIAL */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
 }
 
-.top-bar a:hover {
-  color: #9750b8;
+.social-link {
+  color: #fff;
+  text-decoration: none;
 }
+
+.social-link:hover {
+  color: #e1306c;
+}
+
 
 /* Navbar below top bar */
 .main-navbar {
-  top: 32px; /* height of top bar */
-  background-color: #000;
+  position: fixed;
+  top: 40px;             /* MUST match top-bar height */
+  width: 100%;
+  z-index: 1040;
 }
+
 
 /* Navbar */
 .navbar {
@@ -84,10 +122,12 @@ body {
 /* Toggler */
 .navbar-toggler {
   border: none;
+  background-color: #ccc;
 }
 
 .navbar-toggler-icon {
   filter: invert(1);
+  
 }
 
 .navbar-toggler:focus {
@@ -100,14 +140,44 @@ body {
     flex-direction: column;
     gap: 4px;
   }
+}
+@media (min-width: 992px) {
+  .top-bar {
+    display: flex;
+  }
+
+  .main-navbar {
+    top: 40px;
+  }
 
   body {
-    padding-top: 140px;
+    padding-top: 110px; /* top-bar + navbar */
+  }
+}
+
+/* Hide top bar on mobile & tablet */
+@media (max-width: 991.98px) {
+  .top-bar {
+    display: none;
+  }
+
+  /* Move navbar to top when top-bar is hidden */
+  .main-navbar {
+    top: 0;
+  }
+
+  body {
+    padding-top: 70px; /* only navbar height */
   }
 }
 
 
 /* Slider height */
+
+.hero-section {
+  margin-top: 0;
+  padding-top: 0;
+}
 .carousel-item img {
   height: 90vh;
   object-fit: cover;
@@ -139,7 +209,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   background-color: #9750b8;
-  color: #000;
+  color: #fffefe;
   padding: 10px 26px;
   border-radius: 30px;
   text-decoration: none;
@@ -291,10 +361,13 @@ body {
 }
 
 .ragdoll-card p {
-  font-size: 15px;
+  /* font-size: 15px;
   line-height: 1.7;
   color: #444;
-  margin: 0;
+  margin: 0; */
+  height: 40px;
+  /* background: #9b59b6; */
+  z-index: 1050;
 }
 
 /* Hover */
@@ -422,5 +495,108 @@ body {
 
   .ragdoll-overview h2 {
     font-size: 32px;
+  }
+}
+
+
+/* FOOTER */
+.site-footer {
+  background-color: #0d0d0d;
+  color: #ccc;
+  padding: 80px 0 30px;
+  font-size: 15px;
+}
+
+.site-footer h5 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+/* Brand */
+.footer-brand img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  line-height: 1.7;
+  color: #bbb;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #9750b8;
+}
+
+/* Contact */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer-contact i {
+  color: #9750b8;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.footer-contact a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #9750b8;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 0 25px;
+  }
+
+  .footer-brand img {
+    height: 45px;
   }
 }
