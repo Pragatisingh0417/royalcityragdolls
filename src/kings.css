@@ -1,0 +1,99 @@
+/* KINGS PAGE */
+.kings-hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), #9750b8;
+  color: #fff;
+  padding: 110px 20px;
+}
+
+.kings-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 56px;
+}
+
+.kings-hero h3 {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.kings-hero p {
+  max-width: 850px;
+  margin: 20px auto 0;
+  line-height: 1.8;
+}
+
+/* Content */
+.kings-content {
+  padding: 90px 15px;
+}
+
+.king-section {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  border-left: 6px solid #9750b8;
+}
+
+.king-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+.king-section h2 i {
+  color: #9750b8;
+  font-size: 26px;
+}
+
+.king-section h4 {
+  color: #9750b8;
+  margin-top: 20px;
+}
+
+.king-section p,
+.king-section li {
+  line-height: 1.8;
+  color: #444;
+}
+
+.king-types {
+  padding-left: 18px;
+}
+
+.king-section.highlight {
+  background: #9750b8;
+  color: #fff;
+}
+
+.king-section.highlight h2,
+.king-section.highlight p,
+.king-section.highlight li {
+  color: #fff;
+}
+
+.king-conclusion {
+  background: #000;
+  color: #fff;
+  padding: 50px;
+  border-radius: 18px;
+}
+
+.king-conclusion h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .kings-hero h1 {
+    font-size: 38px;
+  }
+
+  .king-section {
+    padding: 28px;
+  }
+}

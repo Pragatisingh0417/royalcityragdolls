@@ -1,0 +1,86 @@
+/* KITTENS PAGE */
+.kittens-hero {
+  background: linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    #9750b8;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.kittens-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 54px;
+}
+
+.kittens-hero p {
+  max-width: 800px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+}
+
+/* Content */
+.kittens-content {
+  padding: 80px 15px;
+}
+
+.intro {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Sections */
+.care-section {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  border-left: 6px solid #9750b8;
+}
+
+.care-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.care-section h4 {
+  color: #9750b8;
+  margin-top: 25px;
+}
+
+.care-section ul {
+  padding-left: 20px;
+}
+
+.care-section li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* Conclusion */
+.kittens-conclusion {
+  background: #9750b8;
+  color: #fff;
+  padding: 50px;
+  border-radius: 18px;
+}
+
+.kittens-conclusion h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .kittens-hero h1 {
+    font-size: 36px;
+  }
+
+  .care-section {
+    padding: 28px;
+  }
+}

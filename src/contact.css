@@ -1,0 +1,119 @@
+/* CONTACT PAGE */
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #9750b8;
+  color: #fff;
+  padding: 110px 20px;
+}
+
+.contact-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 56px;
+}
+
+.contact-hero p {
+  max-width: 800px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+}
+
+/* Content */
+.contact-content {
+  padding: 90px 15px;
+}
+
+/* Info Box */
+.contact-info {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  border-left: 6px solid #9750b8;
+  height: 100%;
+}
+
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.contact-info li {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-info i {
+  color: #9750b8;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #9750b8;
+}
+
+/* Form */
+.contact-form {
+  background: #000;
+  padding: 40px;
+  border-radius: 18px;
+  color: #fff;
+}
+
+.contact-form h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.contact-form .form-control {
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: #9750b8;
+}
+
+/* Button */
+.contact-btn {
+  background: #9750b8;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 38px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 28px;
+  }
+}

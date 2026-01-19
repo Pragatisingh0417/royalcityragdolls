@@ -1,0 +1,93 @@
+/* AVAILABLE KITTENS */
+.available-kittens {
+  padding: 90px 0;
+  background-color: #faf8f5;
+}
+
+.available-kittens h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 48px;
+  color: #111;
+}
+
+.available-kittens .subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 650px;
+  margin: 10px auto 0;
+}
+
+/* Image + Content Split */
+.kitten-split {
+  padding: 50px 0;
+  background-color: #faf8f5;
+}
+
+.kitten-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Content */
+.kitten-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 34px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.kitten-content p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.kitten-list {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.kitten-list li {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .kitten-split {
+    padding: 70px 0;
+  }
+
+  .kitten-img {
+    height: 320px;
+    margin-bottom: 20px;
+  }
+
+  .kitten-content h3 {
+    font-size: 28px;
+  }
+}
+/* FAQ */
+.kitten-faq {
+    margin: 20px;
+  background-color: #faf8f5;
+  margin-bottom: 20px;
+}
+
+.kitten-faq h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 40px;
+}
+
+/* Accordion */
+.accordion-button {
+  font-family: 'Playfair Display', serif;
+ font-style: italic;
+}
