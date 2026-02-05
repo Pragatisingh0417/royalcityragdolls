@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Royal City Ragdolls</title>
@@ -22,11 +22,11 @@
     />
 
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./src/about.css" />
-    <link rel="stylesheet" href="./src/available-kittens.css">
+    <link rel="stylesheet" href="./src/faq.css">
   </head>
-  <body>
-    <!-- TOP INFO BAR -->
+<body>
+
+<!-- TOP INFO BAR -->
     <div class="top-bar fixed-top text-white">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Left: Phone -->
@@ -120,7 +120,7 @@
               <a class="nav-link" href="./faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
             </li>
 
             <!-- CTA BUTTON -->
@@ -132,254 +132,113 @@
       </div>
     </nav>
 
-    <!-- HERO SLIDER -->
-    <section class="hero-slider">
-      <div
-        id="heroCarousel"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-        data-bs-pause="false"
-      >
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
-
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active kenburns">
-            <img
-              src="./src/image/cats-1.png"
-              class="d-block w-100"
-              alt="Cute Kitten"
-            />
-            <div class="carousel-caption">
-              <h1>Pure Breed Kittens</h1>
-              <p>Healthy, loving, and raised with care</p>
-              <a href="#" class="slider-cta">View Available Kittens</a>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item kenburns">
-            <img
-              src="./src/image/cats-2.png"
-              class="d-block w-100"
-              alt="Luxury Cats"
-            />
-            <div class="carousel-caption">
-              <h1>Ethical Cat Breeding</h1>
-              <p>Trusted & responsible breeding practices</p>
-              <a href="#" class="slider-cta">Book a Visit</a>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item kenburns">
-            <img
-              src="./src/image/cats-3.png"
-              class="d-block w-100"
-              alt="Happy Kittens"
-            />
-            <div class="carousel-caption">
-              <h1>Your New Family Member</h1>
-              <p>Find your perfect kitten today</p>
-              <a href="#" class="slider-cta">Contact Us</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-
-
-<!-- AVAILABLE KITTENS -->
-<section class="available-kittens">
+    
+  <!-- FAQ SECTION -->
+<section class="faq-section">
   <div class="container">
-
-    <!-- Page Heading -->
-    <div class="text-center mb-5">
-      <h1>Available Kittens</h1>
-      <p class="subtitle">
-        Our current litters raised with love, care, and ethical breeding practices
-      </p>
-    </div>
-
-    <!-- IMAGE LEFT - CONTENT RIGHT -->
-<section class="kitten-split">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <!-- Image -->
-      <div class="col-lg-6">
-        <img
-          src="./src/image/kitten-full.jpg"
-          alt="Ragdoll Kitten"
-          class="img-fluid kitten-img"
-        />
-      </div>
-
-      <!-- Content -->
-      <div class="col-lg-6">
-        <div class="kitten-content">
-          <h3>Litter One</h3>
-
-          <p><strong>Born:</strong> July 2024</p>
-
-          <p>
-            Tiara’s kittens are 12 weeks old and looking for their furever homes.
-            All of our kittens are HCM, PKD, FIV and FELV negative and come with
-            a one year health guarantee.
-          </p>
-
-          <p>
-            Spay and neuters can be done upon request. Please contact us for
-            pricing and additional information.
-          </p>
-
-          <ul class="kitten-list">
-            <li>Red Collar – Female</li>
-            <li>Brown Collar – Male</li>
-            <li>Green Collar – Female</li>
-            <li>Purple Collar – Male</li>
-          </ul>
-
-          <a href="/contact" class="inquiry-btn">Inquire About This Litter</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- IMAGE RIGHT - CONTENT LEFT -->
-<section class="kitten-split">
-  <div class="container">
-    <div class="row align-items-center g-5 flex-lg-row-reverse">
-
-      <!-- Image -->
-      <div class="col-lg-6">
-        <img
-          src="./src/image/kitten-full-2.jpg"
-          alt="Ragdoll Kitten Litter Two"
-          class="img-fluid kitten-img"
-        />
-      </div>
-
-      <!-- Content -->
-      <div class="col-lg-6">
-        <div class="kitten-content">
-          <h3>Litter Two</h3>
-
-          <p><strong>Born:</strong> June 2024</p>
-
-          <p>
-            Blitzy delivered four beautiful babies. She and her kittens are in
-            excellent health, and Blitzy is proving to be an exceptional caregiver
-            with strong protective instincts toward her young.
-          </p>
-
-          <p>
-            These kittens are being raised in a loving, nurturing environment
-            and will be well socialized before joining their forever homes.
-          </p>
-
-          <a href="#contact" class="inquiry-btn">Inquire About This Litter</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-</div>
-</section>
-
-<!-- ================= FAQ SECTION ================= -->
-<section class="kitten-faq">
-  <div class="container">
-
     <div class="text-center mb-5">
       <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about reserving and adopting a kitten</p>
     </div>
 
-    <div class="accordion" id="kittenFAQ">
+    <div class="accordion" id="faqAccordion">
 
+      <!-- FAQ 1 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
             How do I reserve a kitten?
           </button>
         </h2>
-        <div id="faq1" class="accordion-collapse collapse show">
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            To reserve a kitten, please contact us directly. A deposit is required to hold
-            your chosen kitten.
+            To reserve a kitten, a deposit is required. If the kittens are not yet born,
+            selection of kitten(s) is done in the order deposits are received. Deposits
+            are non-refundable but can be transferred to another litter in case of an
+            emergency.
           </div>
         </div>
       </div>
 
+      <!-- FAQ 2 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-            What health checks are included?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            How do I adopt a kitten?
           </button>
         </h2>
-        <div id="faq2" class="accordion-collapse collapse">
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            All kittens are HCM, PKD, FIV and FELV negative and come with a one-year
-            health guarantee.
+            You can contact us directly by email, phone, or Facebook, or by filling out
+            our adoption form. We are happy to guide you through the process and answer
+            any questions you may have.
           </div>
         </div>
       </div>
 
+      <!-- FAQ 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-            When can kittens go to their new homes?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            When can kittens go to their forever homes?
           </button>
         </h2>
-        <div id="faq3" class="accordion-collapse collapse">
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Kittens typically go home at 12 weeks of age, once they are fully weaned
-            and socialized.
+            Kittens are ready to leave for their forever homes at 8 weeks of age, after
+            completing their veterinary check and receiving their first vaccination.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            What services are included with my kitten?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We are a spay and neuter cattery. Your kitten will receive the second
+            vaccination, spay/neuter surgery, microchip, and post-operative care.
+            All procedures are completed by our trusted veterinarian.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            Do you offer extended kitten care?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we offer kitten care from 8 to 12 weeks for families who live at a
+            distance. This service is available for an additional cost.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+            What comes with my kitten?
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Each kitten goes home with:
+            <ul>
+              <li>TICA registration form</li>
+              <li>Vitamins</li>
+              <li>Sample food</li>
+              <li>Toys</li>
+              <li>A blanket that smells like mom</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -389,7 +248,8 @@
 </section>
 
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
+ <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
         <div class="row gy-5">
@@ -423,7 +283,8 @@
             <ul class="footer-links">
               <li><a href="./about.html">About Us</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
-              <li><a href="./faq.html">FAQ</a>
+              <li>
+              <a href="./faq.html">FAQ</a>
             </li>
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
@@ -474,5 +335,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+
+</body>
 </html>
