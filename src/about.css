@@ -2,7 +2,7 @@
 .about-banner {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("/src/image/cats-2.png") center / cover no-repeat;
+    url("/src/image/cats-4.png") center / cover no-repeat;
 
   min-height: 70vh;
   max-height: 90vh;

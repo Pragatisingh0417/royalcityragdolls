@@ -13,7 +13,7 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: #9750b8;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), #9750b8;
   z-index: 1050;
 }
 
@@ -106,7 +106,7 @@ body {
 .cta-btn {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  background-color: #9750b8;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), #9750b8;
   color: #ffffff;
   font-weight: 600;
   padding: 8px 18px;
@@ -210,7 +210,7 @@ body {
   display: inline-block;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  background-color: #9750b8;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), #9750b8;
   color: #fffefe;
   padding: 10px 26px;
   border-radius: 30px;
@@ -601,4 +601,51 @@ body {
   .footer-brand img {
     height: 45px;
   }
+}
+
+
+
+
+/* ===============================
+   FLOATING CONTACT BUTTONS
+================================ */
+
+.floating-contact {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.float-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Phone */
+.float-btn.phone {
+  background: #9750b8;
+}
+
+/* WhatsApp */
+.float-btn.whatsapp {
+  background: #25D366;
+}
+
+/* Hover Effect */
+.float-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
 }
