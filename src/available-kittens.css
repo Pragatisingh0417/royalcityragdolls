@@ -91,3 +91,37 @@
   font-family: 'Playfair Display', serif;
  font-style: italic;
 }
+
+
+.kitten-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.kitten-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.kitten-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.inquiry-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #9750b8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.inquiry-btn:hover {
+  background: #444;
+}
